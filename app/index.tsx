@@ -13,6 +13,11 @@ import cn from "clsx";
 export default function Index() {
   return (
     <SafeAreaView className="flex-1 bg-white">
+      <View className="flex-between flex-row w-full my-5 px-5">
+        <View className="flex-start">
+          <Text className="small-bold text-primary">DELIVER TO </Text>
+        </View>
+      </View>
       <FlatList
         data={offers}
         keyExtractor={(item, index) => `${item.title}-${index}`}
